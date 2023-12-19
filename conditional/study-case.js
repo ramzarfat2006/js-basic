@@ -3,11 +3,11 @@ let jawab;
 
 if (value > 0){
     jawab = "POSITIF"
-    console.log("BILANGAN POSITIF")
+    console.log(jawab)
 } else if (values < 0){
     jawab = "NEGATIF"
-    console.log("BILANGAN NEGATIF")
+    console.log(jawab)
 } else {
     jawab = "BUKAN BILANGAN"
-    console.log("BUKAN BILANGAN")
+    console.log(jawab)
 }
