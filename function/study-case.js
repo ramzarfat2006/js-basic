@@ -14,10 +14,12 @@ function subtraction(angka1,angka2){
     return angka1 - angka2;
 }
 console.log(subtraction(5,10))
+
 function multiplication(angka1,angka2){
     return angka1 * angka2;
 }
 console.log(multiplication(8,9))
+
 function division(angka1,angka2){
     return angka1 / angka2;
 }
