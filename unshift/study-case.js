@@ -1,7 +1,7 @@
 let hobi = ["Ngoding","Ngefilm","Ngegame"]
 
-function addFirstElement(){
-    return hobi.unshift("Bernafas","Berkedip")
+function addFirstElement(index1,index2){
+    return hobi.unshift(index1,index2)
 }
-addFirstElement()
+addFirstElement("Bernafas","Berkedip")
 console.log(hobi)
