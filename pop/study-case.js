@@ -1,7 +1,7 @@
 let animal = ["Singa","Harimau","Burung"]
 
-function hapus(){
+function deleteLastElement(){
     return animal.pop()
 }
-hapus()
+deleteLastElement()
 console.log(animal)
