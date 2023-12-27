@@ -1,7 +1,7 @@
 let hobi = ["Ngoding","Ngefilm","Ngegame"]
 
-function hapus(){
+function deleteFirstElement(){
     return hobi.shift()
 }
-hapus()
+deleteFirstElement()
 console.log(hobi)
