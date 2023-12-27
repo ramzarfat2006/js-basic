@@ -1,7 +1,7 @@
 let hobi = ["Ngoding","Ngefilm","Ngegame"]
 
-function tambah(){
+function addFirstElement(){
     return hobi.unshift("Bernafas","Berkedip")
 }
-tambah()
+addFirstElement()
 console.log(hobi)
