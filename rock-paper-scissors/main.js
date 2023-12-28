@@ -1,27 +1,30 @@
-function computer(){
+function computerSelect(){
     let select = ["Batu","Gunting","Kertas"]
     let index = Math.floor(Math.random() * select.length)
     return select[index]
 }
 
-function winner(player1,player2){
-    if(player1 === player2){
-        return seri
+function winner(userSelect,computerSelect){
+    if(userSelect === computerSelect){
+        return "Seri"
     } else if (
-        (player1 === "gunting" && player2 === "batu") ||
-        (player1 === "kertas" && player2 === "gunting") ||
-        (player1 === "batu" && player2 === "kertas")
+        (userSelect === "gunting" && computerSelect === "kertas") ||
+        (userSelect === "kertas" && computerSelect === "batu") ||
+        (userSelect === "batu" && computerSelect === "gunting")
     ) {
         return "Pemain Menang"
     } else {
-        return "Computer Menang"
+        return "Komputer Menang"
     }
 }
 
 
-function play(main){
-    let user = main
-    let computer = computer()
-    let result = winner(user,computer)
-    console.log(`Pemain memilih ${user}`)
+function play(userSelect){
+    const user = userSelect
+    const computer = computerSelect()
+    const result = winner(user,computer)
+    console.log(`Pemain memilih : ${user}`)
+    console.log(`Komputer memilih : ${computer}`)
+    console.log(`Hasilnya : ${result}`)
 }
+play("batu")
