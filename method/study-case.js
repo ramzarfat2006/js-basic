@@ -18,15 +18,18 @@ const eagle = {
 
 const uniqueNumber = {
     n: [3,7,5,15,13,2,30,27,45],
-    multipleOfFife(){
-        if(n % 5 === 0){
-            return "Kelipatan Lima"
-        } else {
-            return "Bukan Kelipatan Lima"
+    result: [],
+    multipleOfFive(){
+        let arr = this.n
+        for(let i = 0; i <= this.n.length; i++){
+            if(arr[i] % 5 === 0){
+                this.result.push(arr[i])
+            }
         }
+        return this.result
     }
 }
 
 console.log(tiger.getFood())
 eagle.voice()
-console.log(uniqueNumber.multipleOfFive(5))
+console.log(uniqueNumber.multipleOfFive())
