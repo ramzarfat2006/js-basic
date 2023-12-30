@@ -1,5 +1,5 @@
 function computerSelect(){
-    let select = ["Batu","Gunting","Kertas"]
+    let select = ["batu","gunting","kertas"]
     let index = Math.floor(Math.random() * select.length)
     return select[index]
 }
